@@ -37,9 +37,9 @@ export default function Home() {
   const [selectedPlatforms, setSelectedPlatforms] = useState(['instagram', 'tiktok']);
   const [isGenerating, setIsGenerating] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [auditResults, setAuditResults] = useState(null);
-  const [generatedContent, setGeneratedContent] = useState([]);
-  const [campaigns, setCampaigns] = useState([]);
+  const [auditResults, setAuditResults] = useState<any>(null);
+  const [generatedContent, setGeneratedContent] = useState<any[]>([]);
+  const [campaigns, setCampaigns] = useState<any[]>([]);
 
   const runAppAudit = async () => {
     setIsAnalyzing(true);
